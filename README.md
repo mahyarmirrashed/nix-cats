@@ -1,37 +1,38 @@
 # Nix Cats ❄️ 🐱
 
-A supercalifragilisticexpialidocious Neovim configuration using Nix.
+Welcome to my Neovim configuration, powered by [Nix Cats](https://github.com/BirdeeHub/nixCats-nvim)! It contains my personal Neovim setup, designed to be reproducible, modular, and easy to tweak. If you're wondering what the hell this is, this `README.md` will explain what my config does and how to try it without slogging through the Nix Cats docs.
 
-## What is Nix?
+## Nix Cats? Never heard of it...
 
-[Nix](https://nixos.org/) is a package manager and tool for configuring software environments. It aims for reproducibility, isolation, and atomicity using a functional programming approach to define and manage software installations.
+Nix Cats, short for Nix Categories, is a Nix-based package manager specifically designed for Neovim. It allows for managing Neovim configurations and plugins in a reproducible and declarative way.
 
-## What is Nix Cats?
+Think of it as like Neovim dotfiles, but supercharged with Nix to avoid dependency hell and configuration drift. This means that it respects normal Neovim configuration directories like `ftplugin/`, `pack/`, and `after/`.
 
-[Nix Cats](https://github.com/BirdeeHub/nixCats-nvim), short for Nix Categories, is a Nix-based package manager specifically designed for Neovim. It allows users to manage Neovim configurations and plugins in a reproducible, declarative way.
+The "category" part of Nix Cats refers to arbitrary labels (e.g. `debug`, `cmp`, `format`) that groups related plugins, runtime dependencies, and settings together. This lets me enable/disable features for different workflows.
 
-### How is it Different?
+Above all, and unlike other Nix-based Neovim configuration tools like [NixVim](https://github.com/nix-community/nixvim) or [Home Manager](https://github.com/nix-community/home-manager), Nix Cats does not require conflating Nix and Lua code.
 
-Unlike other Nix-based Neovim configuration tools like [NixVim](https://github.com/nix-community/nixvim) or [Home Manager](https://github.com/nix-community/home-manager), Nix Cats aims to provide a familiar experience for Neovim users by supporting a "normal" Neovim configuration directory, making it easier for those already comfortable with Neovim to adopt Nix-based management.
+- **Nix** for package management; and
+- **Lua** for Neovim configuration.
 
-### What are Categories?
-
-Categories are arbitrary labels (e.g. `minimal`, `standard`, `full`) that group plugins, runtime dependencies, and settings into reusable categories. These categories can then be selectively enabled for different Neovim configurations: enabling modular and reusable setups.
-
-This is the **core innovation** of Nix Cats: arbitrary labels to configure environments.
-
-### What are the Benefits?
-
-Rather than conflating Nix and Lua code (e.g. string interpolations of Nix in Lua code), to define different "environments", we can keep them isolated:
-
-- Nix for package management; and
-- Lua for Neovim configuration.
-
-This clear separation of responsibilities makes our Neovim environment configuration much more maintainable, reprodubible, and as a consequence: less buggy.
+This clear separation of responsibilities makes my Neovim config much more maintainable, reproducible, and, consequently: less buggy.
 
 ### How does it Work?
 
-In our `.lua` files, we query our current environment using `nixCats('category')`, and configure our environment conditionally from there.
+In the `flake.nix`, we define our categories and package definitions.
+
+```nix
+categoryDefinitions = {
+  core = [ "vim-sleuth" "telescope.nvim" ];
+  ai = [ "avante-nvim" ];
+};
+packageDefinitions = {
+  dev = { categories = [ "core" "ai" ]; };
+  minimal = { categories = [ "core" ]; };
+};
+```
+
+Then, in the `init.lua`, we query if the category is enabled, and configure our environment conditionally from there.
 
 ```lua
 -- init.lua
@@ -49,3 +50,11 @@ require("lz.n").load {
   },
 }
 ```
+
+## How to Try It
+
+To run, first, install [Nix](https://nixos.org/download/) and enable flakes (`nix --version` to check). Then, run `nix shell 'github:mahyarmirrashed/nix-cats'`.
+
+## Final Notes
+
+This is *my* setup, so it's tailored for me. But, feel free to steal ideas or fork to make it your own badass Neovim config. Have fun! 🚀
