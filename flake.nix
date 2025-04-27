@@ -15,10 +15,9 @@
       flake-utils,
     }@inputs:
     let
-      cats = import ./cats { inherit nixpkgs outputs inputs; };
+      cats = import ./cats { inherit nixpkgs; };
 
       inherit (nixCats) utils;
-      inherit (self) outputs;
       inherit (cats) categoryDefinitions packageDefinitions;
 
       luaPath = "${./.}";

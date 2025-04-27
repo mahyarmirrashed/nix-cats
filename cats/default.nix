@@ -1,9 +1,7 @@
 {
   nixpkgs,
-  inputs,
-  outputs,
 }:
 {
-  categoryDefinitions = { };
-  packageDefinitions = { };
+  categoryDefinitions = import ./categoryDefinitions.nix;
+  packageDefinitions = import ./packageDefinitions.nix { inherit nixpkgs; };
 }
