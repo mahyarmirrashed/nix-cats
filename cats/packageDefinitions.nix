@@ -5,6 +5,7 @@
     {
       settings = {
         configDirName = name;
+        aliases = [ "e" ];
       };
       categories = {
         debug = true;
