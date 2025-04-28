@@ -1,2 +1,2 @@
--- begin configuring neovim
+-- Begin configuration
 require("config")
