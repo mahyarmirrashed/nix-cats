@@ -7,14 +7,12 @@
         configDirName = name;
       };
       categories = {
+        debug = true;
         general = true;
-        lang = {
-          lua = true;
-          markdown = true;
-          nix = true;
-        };
-        tools = {
-          cmp = true;
+        lang = true;
+        tools = true;
+        config = {
+          theme = "gruvbox";
         };
       };
       extra = {
