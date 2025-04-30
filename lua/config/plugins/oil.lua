@@ -8,21 +8,26 @@ return {
   keys = {
     { "<leader>e", "<cmd>Oil<CR>", desc = "Toggle Oil file explorer" },
   },
-  opts = {
-    -- Replace `netrw` as default file explorer
-    default_file_explorer = true,
-    -- Columns to show for files
-    columns = {
-      "icon",
-      "size",
-    },
-    view_options = {
-      -- Show files and directories that start with "."
-      show_hidden = true,
-    },
-  },
-  after = function(_, opts)
-    require("oil").setup(opts)
+  after = function(_)
+    require("oil").setup({
+      -- Replace `netrw` as default file explorer
+      default_file_explorer = true,
+      -- Keymaps in oil buffer
+      keymaps = {
+        ["h"] = { "actions.parent", mode = "n" },
+        ["l"] = { "actions.select", mode = "n" },
+      },
+      -- Columns to show for files
+      columns = {
+        "icon",
+        "permissions",
+        "size",
+      },
+      view_options = {
+        -- Show files and directories that start with "."
+        show_hidden = true,
+      },
+    })
   end,
 }
 
