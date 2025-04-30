@@ -13,6 +13,7 @@
     general = with pkgs.vimPlugins; [
       # Lazy-loading library
       lze
+      lzextras
       # Standard plugins
       oil-nvim
       surround-nvim
