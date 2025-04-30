@@ -3,7 +3,8 @@
 -------------------------------------------------------------------------------
 
 return {
-  "stevearc/oil.nvim",
+  "oil.nvim",
+  lazy = false,
   keys = {
     { "<leader>e", "<cmd>Oil<CR>", desc = "Toggle Oil file explorer" },
   },
