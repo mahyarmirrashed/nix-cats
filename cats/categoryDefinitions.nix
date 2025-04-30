@@ -39,6 +39,10 @@
         gopls
         gotools
       ];
+      lua = with pkgs; [
+        lua-language-server
+        stylua
+      ];
       nix = with pkgs; [
         nixd
         nixfmt-rfc-style
