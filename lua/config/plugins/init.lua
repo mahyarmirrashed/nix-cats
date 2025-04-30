@@ -2,7 +2,7 @@
 -- Plugin Settings
 -------------------------------------------------------------------------------
 
-  require("config.plugins.oil"),
-  require("config.plugins.surround"),
 require("lze").load({
+  { import = "config.plugins.oil" },
+  { import = "config.plugins.surround" },
 })
