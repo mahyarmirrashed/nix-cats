@@ -21,7 +21,7 @@ return {
       show_hidden = true,
     },
   },
-  config = function(_, opts)
+  after = function(_, opts)
     require("oil").setup(opts)
   end,
 }
