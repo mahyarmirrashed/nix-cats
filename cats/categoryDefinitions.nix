@@ -11,9 +11,13 @@
   # Plugins that will be loaded at startup
   startupPlugins = {
     general = with pkgs.vimPlugins; [
+      # Lazy-loading library
       lze
+      # Standard plugins
       oil-nvim
       surround-nvim
+      # Miscellaneous plugins
+      nvim-lspconfig
     ];
     config = {
       theme =
