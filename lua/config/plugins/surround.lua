@@ -3,10 +3,9 @@
 -------------------------------------------------------------------------------
 
 return {
-  "nvim-surround",
+  "surround.nvim",
   event = "DeferredUIEnter",
-  after = function(plugin)
-    require("nvim-surround").setup()
+  after = function(_)
+    require("surround").setup({})
   end,
 }
-
