@@ -10,7 +10,11 @@
 {
   # Plugins that will be loaded at startup
   startupPlugins = {
-    general = with pkgs.vimPlugins; [ lz-n oil-nvim ];
+    general = with pkgs.vimPlugins; [
+      lz-n
+      oil-nvim
+      surround-nvim
+    ];
     config = {
       theme =
         with pkgs.vimPlugins;
