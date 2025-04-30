@@ -3,5 +3,6 @@
 -------------------------------------------------------------------------------
 
 require("lz.n").load({
+  require("config.plugins.oil"),
   require("config.plugins.surround"),
 })
