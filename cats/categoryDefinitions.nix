@@ -17,8 +17,6 @@
       # Standard plugins
       oil-nvim
       mini-icons
-      conform-nvim
-      surround-nvim
       # Miscellaneous plugins
       nvim-lspconfig
     ];
@@ -27,23 +25,27 @@
   # Plugins that will not loaded at startup
   # Use `lze` or `lz.n` to lazy load these
   # Use `:NixCats pawsible` to see the `packadd` expects
-  optionalPlugins = { };
+  optionalPlugins = {
+    general = with pkgs.vimPlugins; [
+      conform-nvim
+      surround-nvim
+    ];
+    lang = {
+      go = with pkgs; [
+        gofumpt
+        gotools
+      ];
+      lua = with pkgs; [ stylua ];
+      nix = with pkgs; [ nixfmt-rfc-style ];
+    };
+  };
 
   # Runtime plugin dependencies
   lspsAndRuntimeDeps = {
     lang = {
-      go = with pkgs; [
-        gopls
-        gotools
-      ];
-      lua = with pkgs; [
-        lua-language-server
-        stylua
-      ];
-      nix = with pkgs; [
-        nixd
-        nixfmt-rfc-style
-      ];
+      go = with pkgs; [ gopls ];
+      lua = with pkgs; [ lua-language-server ];
+      nix = with pkgs; [ nixd ];
       python = with pkgs; [
         basedpyright
         ruff
