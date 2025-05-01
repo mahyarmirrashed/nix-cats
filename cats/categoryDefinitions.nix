@@ -26,15 +26,9 @@
   # Use `lze` or `lz.n` to lazy load these
   # Use `:NixCats pawsible` to see the `packadd` expects
   optionalPlugins = {
-    general = with pkgs.vimPlugins; [
-      conform-nvim
-      surround-nvim
-    ];
+    general = with pkgs.vimPlugins; [ conform-nvim surround-nvim ];
     lang = {
-      go = with pkgs; [
-        gofumpt
-        gotools
-      ];
+      go = with pkgs; [ gofumpt gotools ];
       lua = with pkgs; [ stylua ];
       nix = with pkgs; [ nixfmt-rfc-style ];
     };
@@ -46,10 +40,7 @@
       go = with pkgs; [ gopls ];
       lua = with pkgs; [ lua-language-server ];
       nix = with pkgs; [ nixd ];
-      python = with pkgs; [
-        basedpyright
-        ruff
-      ];
+      python = with pkgs; [ basedpyright ruff ];
     };
   };
 
