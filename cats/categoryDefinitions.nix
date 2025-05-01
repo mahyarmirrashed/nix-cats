@@ -22,16 +22,6 @@
       # Miscellaneous plugins
       nvim-lspconfig
     ];
-    config = {
-      theme =
-        with pkgs.vimPlugins;
-        (builtins.getAttr (categories.config.theme or "gruvbox") {
-          "catppuccin" = catppuccin-nvim;
-          "gruvbox" = gruvbox-nvim;
-          "onedark" = onedark-nvim;
-          "tokyonight" = tokyonight-nvim;
-        });
-    };
   };
 
   # Plugins that will not loaded at startup
