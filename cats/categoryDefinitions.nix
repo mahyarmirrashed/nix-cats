@@ -34,25 +34,26 @@
     general = with pkgs.vimPlugins; [
       mini-surround
     ];
-    lang = {
-      go = with pkgs; [
-        gofumpt
-        gotools
-      ];
-      lua = with pkgs; [ stylua ];
-      nix = with pkgs; [ nixfmt-rfc-style ];
-    };
   };
 
   # Runtime plugin dependencies
   lspsAndRuntimeDeps = {
     lang = {
+      docker = with pkgs; [ hadolint ];
       go = with pkgs; [
         go
         gopls
+        gofumpt
+        gotools
       ];
-      lua = with pkgs; [ lua-language-server ];
-      nix = with pkgs; [ nixd ];
+      lua = with pkgs; [
+        lua-language-server
+        stylua
+      ];
+      nix = with pkgs; [
+        nixd
+        nixfmt-rfc-style
+      ];
       python = with pkgs; [
         basedpyright
         ruff
