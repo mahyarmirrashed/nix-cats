@@ -24,9 +24,7 @@
 
       defaultPackageName = "edit";
 
-      dependencyOverlays = [
-        (utils.standardPluginOverlay inputs)
-      ];
+      dependencyOverlays = [ (utils.standardPluginOverlay inputs) ];
     in
     flake-utils.lib.eachDefaultSystem (
       system:
@@ -34,11 +32,7 @@
         pkgs = nixpkgs.legacyPackages.${system};
 
         nixCatsBuilder = utils.baseBuilder luaPath {
-          inherit
-            nixpkgs
-            system
-            dependencyOverlays
-            ;
+          inherit nixpkgs system dependencyOverlays;
         } categoryDefinitions packageDefinitions;
         defaultPackage = nixCatsBuilder defaultPackageName;
       in
