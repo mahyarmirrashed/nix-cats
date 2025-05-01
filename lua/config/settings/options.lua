@@ -1,7 +1,3 @@
--------------------------------------------------------------------------------
--- Options Configurations
--------------------------------------------------------------------------------
-
 -- See :help E355 for the full list of options
 
 -- resolves to ~/.local/share/<program-name>/spell

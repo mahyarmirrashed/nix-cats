@@ -1,7 +1,3 @@
--------------------------------------------------------------------------------
--- Configuration for LSPs
--------------------------------------------------------------------------------
-
 local function on_attach(_, bufnr)
   -- Helper function for normal-mode keymaps
   local nmap = function(keys, func, desc)
