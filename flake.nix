@@ -43,7 +43,13 @@
         defaultPackage = nixCatsBuilder defaultPackageName;
       in
       {
-        formatter = pkgs.nixfmt-tree;
+        formatter = pkgs.nixfmt-tree.override {
+          settings = {
+            formatter.nixfmt = {
+              options = [ "--strict" ];
+            };
+          };
+        };
 
         packages = utils.mkAllWithDefault defaultPackage;
       }
