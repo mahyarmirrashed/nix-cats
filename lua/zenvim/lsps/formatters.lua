@@ -3,7 +3,7 @@ require("lze").load({
   event = "BufWritePre",
   keys = {
     {
-      "<leader>FF",
+      "<leader>lf",
       function()
         require("conform").format({
           lsp_fallback = true,
@@ -11,7 +11,7 @@ require("lze").load({
           timeout_ms = 1000,
         })
       end,
-      desc = "[F]ormat [F]ile",
+      desc = "Format Document",
       mode = { "n", "v" },
     },
   },

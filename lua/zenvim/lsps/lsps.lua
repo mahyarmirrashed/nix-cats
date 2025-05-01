@@ -5,13 +5,13 @@ local function on_attach(_, bufnr)
   end
 
   -- Essential LSP keybindings
-  nmap("<leader>rn", vim.lsp.buf.rename, "[R]e[n]ame")
-  nmap("<leader>ca", vim.lsp.buf.code_action, "[C]ode [A]ction")
-  nmap("gd", vim.lsp.buf.definition, "[G]oto [D]efinition")
+  nmap("<leader>lr", vim.lsp.buf.rename, "Rename")
+  nmap("<leader>la", vim.lsp.buf.code_action, "Code Action")
+  nmap("<leader>lh", vim.lsp.buf.signature_help, "Signature Documentation")
   nmap("K", vim.lsp.buf.hover, "Hover Documentation")
   nmap("<C-k>", vim.lsp.buf.signature_help, "Signature Documentation")
 
-  -- XXX: Add references without Telescope
+  nmap("gd", vim.lsp.buf.definition, "Goto Definition")
   nmap("gr", vim.lsp.buf.references, "[G]oto [R]eferences")
 
   vim.api.nvim_buf_create_user_command(
