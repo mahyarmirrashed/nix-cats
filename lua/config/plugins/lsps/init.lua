@@ -2,7 +2,7 @@
 -- Configuration for LSPs
 -------------------------------------------------------------------------------
 
-local function on_attach(client, bufnr)
+local function on_attach(_, bufnr)
   -- Helper function for normal-mode keymaps
   local nmap = function(keys, func, desc)
     vim.keymap.set("n", keys, func, { buffer = bufnr, desc = "LSP: " .. desc })
@@ -13,7 +13,7 @@ local function on_attach(client, bufnr)
   nmap("<leader>ca", vim.lsp.buf.code_action, "[C]ode [A]ction")
   nmap("gd", vim.lsp.buf.definition, "[G]oto [D]efinition")
   nmap("K", vim.lsp.buf.hover, "Hover Documentation")
-  nmap("<leader>D", vim.lsp.buf.type_definition, "Type [D]efinition")
+  nmap("<C-k>", vim.lsp.buf.signature_help, "Signature Documentation")
 
   -- XXX: Add references without Telescope
   nmap("gr", vim.lsp.buf.references, "[G]oto [R]eferences")
@@ -50,5 +50,11 @@ return {
         },
       },
     },
-  }
+  },
+  {
+    "nixd",
+    lsp = {
+      filetypes = { "nix" },
+    },
+  },
 }
