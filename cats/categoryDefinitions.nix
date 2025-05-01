@@ -18,6 +18,7 @@
       oil-nvim
       mini-icons
       # LSP-related plugins
+      conform-nvim
       nvim-lspconfig
       nvim-treesitter.withAllGrammars
     ];
@@ -31,7 +32,6 @@
   # Use `:NixCats pawsible` to see the `packadd` expects
   optionalPlugins = {
     general = with pkgs.vimPlugins; [
-      conform-nvim
       mini-surround
     ];
     lang = {
