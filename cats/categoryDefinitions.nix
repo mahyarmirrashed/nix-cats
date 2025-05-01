@@ -17,6 +17,7 @@
       # Standard plugins
       oil-nvim
       mini-icons
+      conform-nvim
       surround-nvim
       # Miscellaneous plugins
       nvim-lspconfig
