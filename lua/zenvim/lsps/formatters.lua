@@ -1,4 +1,4 @@
-return {
+require("lze").load({
   "conform.nvim",
   event = "BufWritePre",
   keys = {
@@ -28,4 +28,4 @@ return {
       },
     })
   end,
-}
+})

@@ -1,2 +1,2 @@
 -- Begin configuration
-require("config")
+require("zenvim")

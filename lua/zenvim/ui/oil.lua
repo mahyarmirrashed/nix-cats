@@ -1,4 +1,4 @@
-return {
+require("lze").load({
   "oil.nvim",
   dependencies = { "mini.icons" },
   lazy = false,
@@ -26,4 +26,4 @@ return {
       },
     })
   end,
-}
+})

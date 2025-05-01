@@ -22,21 +22,8 @@ local function on_attach(_, bufnr)
   )
 end
 
-return {
-  {
-    "nvim-lspconfig",
-    on_require = { "lspconfig" },
-    lsp = function(plugin)
-      vim.lsp.config(plugin.name, plugin.lsp or {})
-      vim.lsp.enable(plugin.name)
-    end,
-    before = function()
-      vim.lsp.config("*", {
-        on_attach = on_attach,
-        capabilities = vim.lsp.protocol.make_client_capabilities(),
-      })
-    end,
-  },
+-- Define LSP servers
+local servers = {
   {
     "lua_ls",
     lsp = {
@@ -61,5 +48,24 @@ return {
     lsp = {
       filetypes = { "go", "gomod", "gowork", "gotmpl" },
     },
-  },
+  }
 }
+
+-- Load LSP servers with client capabilities
+require("lze").load({
+  {
+    "nvim-lspconfig",
+    on_require = { "lspconfig" },
+    lsp = function(plugin)
+      vim.lsp.config(plugin.name, plugin.lsp or {})
+      vim.lsp.enable(plugin.name)
+    end,
+    before = function()
+      vim.lsp.config("*", {
+        on_attach = on_attach,
+        capabilities = vim.lsp.protocol.make_client_capabilities(),
+      })
+    end,
+  },
+  servers,
+})

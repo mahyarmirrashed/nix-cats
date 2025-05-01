@@ -28,7 +28,7 @@
   optionalPlugins = {
     general = with pkgs.vimPlugins; [
       conform-nvim
-      surround-nvim
+      mini-surround
     ];
     lang = {
       go = with pkgs; [
