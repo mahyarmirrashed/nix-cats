@@ -11,4 +11,3 @@ local map = vim.keymap.set
 map("n", "<leader>w", "<cmd>w<CR>", { desc = "Save file" })
 map("n", "<leader>q", "<cmd>q<CR>", { desc = "Quit" })
 map("i", "jk", "<ESC>", { desc = "Exit insert mode" })
-

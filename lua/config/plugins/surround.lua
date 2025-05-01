@@ -5,7 +5,5 @@
 return {
   "surround.nvim",
   event = "DeferredUIEnter",
-  after = function(_)
-    require("surround").setup({})
-  end,
+  after = function(_) require("surround").setup({}) end,
 }

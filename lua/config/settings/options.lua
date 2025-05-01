@@ -63,4 +63,3 @@ vim.opt.breakindent = true  -- enable break indentation for wrapped lines
 -------------------------------------------------------------------------------
 
 vim.opt.history = 100  -- remember last N, ":" commands
-
