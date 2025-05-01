@@ -11,4 +11,5 @@ require("zenvim.options")
 
 require("zenvim.lsps")
 require("zenvim.misc")
+require("zenvim.themes")
 require("zenvim.ui")

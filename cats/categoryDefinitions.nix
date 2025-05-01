@@ -20,6 +20,9 @@
       # Miscellaneous plugins
       nvim-lspconfig
     ];
+    theme = {
+      gruvbox = with pkgs.vimPlugins; [ gruvbox-nvim ];
+    };
   };
 
   # Plugins that will not loaded at startup

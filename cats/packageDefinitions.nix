@@ -11,6 +11,7 @@
         debug = true;
         general = true;
         lang = true;
+        theme = true;
         tools = true;
       };
       extra = {
