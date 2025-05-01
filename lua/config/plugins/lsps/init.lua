@@ -60,4 +60,10 @@ return {
       filetypes = { "nix" },
     },
   },
+  {
+    "gopls",
+    lsp = {
+      filetypes = { "go", "gomod", "gowork", "gotmpl" },
+    },
+  },
 }
