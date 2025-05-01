@@ -27,8 +27,8 @@ categoryDefinitions = {
   ai = [ "avante-nvim" ];
 };
 packageDefinitions = {
-  dev = { categories = [ "core" "ai" ]; };
-  minimal = { categories = [ "core" ]; };
+  dev = { pkgs, ... }: { categories = { core = true; ai = true; }; };
+  minimal = { pkgs, ... }: { categories = { core = true; }; };
 };
 ```
 
