@@ -37,7 +37,7 @@
   # Runtime plugin dependencies
   lspsAndRuntimeDeps = {
     lang = {
-      go = with pkgs; [ gopls ];
+      go = with pkgs; [ go gopls ];
       lua = with pkgs; [ lua-language-server ];
       nix = with pkgs; [ nixd ];
       python = with pkgs; [ basedpyright ruff ];
