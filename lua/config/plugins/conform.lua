@@ -4,30 +4,31 @@
 
 return {
 	"conform.nvim",
-	event = { "BufWritePre" },
+	event = "BufWritePre",
 	keys = {
-		{ "<leader>FF", function() end, desc = "[F]ormat [F]ile" },
+		{
+			"<leader>FF",
+			function()
+				require("conform").format({
+					lsp_fallback = true,
+					async = false,
+					timeout_ms = 1000,
+				})
+			end,
+			desc = "[F]ormat [F]ile",
+			mode = { "n", "v" },
+		},
 	},
-	after = function(_)
-		local conform = require("conform")
-
-		conform.setup({
+	after = function()
+		require("conform").setup({
 			formatters_by_ft = {
 				lua = { "stylua" },
 				nix = { "nixfmt-rfc-style" },
 			},
 			format_on_save = {
-				lsp_format = "fallback",
+				lsp_fallback = true,
 				timeout_ms = 500,
 			},
 		})
-
-		vim.keymap.set({ "n", "v" }, "<leader>FF", function()
-			conform.format({
-				lsp_fallback = true,
-				async = false,
-				timeout_ms = 1000,
-			})
-		end, { desc = "[F]ormat [F]ile" })
 	end,
 }
