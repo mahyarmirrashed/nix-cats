@@ -12,9 +12,6 @@
         general = true;
         lang = true;
         tools = true;
-        config = {
-          theme = "gruvbox";
-        };
       };
       extra = {
         nixdExtras = { inherit nixpkgs; };
