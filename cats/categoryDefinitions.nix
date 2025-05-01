@@ -14,11 +14,12 @@
       # Lazy-loading library
       lze
       lzextras
-      # Standard plugins
+      # UI-related plugins
       oil-nvim
       mini-icons
-      # Miscellaneous plugins
+      # LSP-related plugins
       nvim-lspconfig
+      nvim-treesitter.withAllGrammars
     ];
     theme = {
       gruvbox = with pkgs.vimPlugins; [ gruvbox-nvim ];
