@@ -22,7 +22,7 @@
 
       luaPath = "${./.}";
 
-      defaultPackageName = "edit";
+      defaultPackageName = "zenvim";
 
       dependencyOverlays = [ (utils.standardPluginOverlay inputs) ];
     in

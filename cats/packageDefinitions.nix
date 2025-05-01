@@ -1,13 +1,13 @@
 { nixpkgs }:
 {
-  edit =
+  zenvim =
     { pkgs, name, ... }:
     {
       settings = {
         configDirName = name;
         aliases = [
+          "edit"
           "e"
-          "zenvim"
         ];
       };
       categories = {
