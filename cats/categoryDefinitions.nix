@@ -16,6 +16,7 @@
       lzextras
       # Standard plugins
       oil-nvim
+      mini-icons
       surround-nvim
       # Miscellaneous plugins
       nvim-lspconfig
