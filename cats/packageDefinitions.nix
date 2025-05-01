@@ -5,7 +5,10 @@
     {
       settings = {
         configDirName = name;
-        aliases = [ "e" ];
+        aliases = [
+          "e"
+          "zenvim"
+        ];
       };
       categories = {
         debug = true;
