@@ -9,7 +9,7 @@ require("lze").load({
     -- Essential
     { "<leader><space>", tf("find_files"), desc = "Search Files" },
     { "<leader>,", tf("buffers"), desc = "Search Buffers" },
-    { "<leader>/", tf("live_grep"), desc = "Live Grep" },
+    { "<leader>/", tf("live_grep"), desc = "Search Words" },
     { "<leader>:", tf("command_history"), desc = "Search Command History" },
     -- Find
     { "<leader>fa", tf("autocommands"), desc = "Search Autocommands" },
@@ -29,8 +29,8 @@ require("lze").load({
     { "<leader>fm", tf("man_pages"), desc = "Search Man Pages" },
     { "<leader>fo", tf("oldfiles"), desc = "Search Old (Recent) Files" },
     { "<leader>fq", tf("quickfix"), desc = "Search Quickfix List" },
-    { "<leader>fw", tf("current_buffer_fuzzy_find"), desc = "Search Buffer Lines" },
-    { "<leader>f.", tf("grep_string"), desc = "Search Words", mode = { "n", "x" } },
+    { "<leader>fw", tf("live_grep"), desc = "Search Words", mode = { "n", "x" } },
+    { "<leader>f.", tf("current_buffer_fuzzy_find"), desc = "Search Buffer Lines" },
     { "<leader>f/", tf("search_history"), desc = "Search History" },
     { "<leader>f'", tf("marks"), desc = "Search Marks" },
     { '<leader>f"', tf("registers"), desc = "Search Registers" },
