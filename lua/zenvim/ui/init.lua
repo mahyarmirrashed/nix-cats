@@ -1,2 +1,2 @@
 require("zenvim.ui.oil")
-require("zenvim.ui.snacks")
+require("zenvim.ui.telescope")

@@ -33,7 +33,8 @@
   optionalPlugins = {
     general = with pkgs.vimPlugins; [
       mini-surround
-      snacks-nvim
+      plenary-nvim
+      telescope-nvim
     ];
   };
 
