@@ -35,6 +35,7 @@
       mini-surround
       plenary-nvim
       telescope-nvim
+      lazygit-nvim
     ];
   };
 
