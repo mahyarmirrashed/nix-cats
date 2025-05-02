@@ -1,7 +1,7 @@
 require("lze").load({
   {
     "nvim-lspconfig",
-    on_require = { "lspconfig" },
+    on_require = "lspconfig",
     keys = {
       { "<leader>rn", vim.lsp.buf.rename, "Rename" },
       { "<leader>ca", vim.lsp.buf.code_action, "Code Action" },
