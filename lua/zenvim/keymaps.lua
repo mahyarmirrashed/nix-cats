@@ -1,9 +1,4 @@
-local map = vim.keymap.set
-
------------------------------------------------------------------------------
--- General Key Mappings
------------------------------------------------------------------------------
-
-map("n", "<leader>w", "<cmd>w<CR>", { desc = "Save file" })
-map("n", "<leader>q", "<cmd>q<CR>", { desc = "Quit" })
-map("i", "jk", "<ESC>", { desc = "Exit insert mode" })
+vim.keymap.set("n", "<leader>w", "<cmd>w<cr>", { desc = "Save file" })
+vim.keymap.set("n", "<leader>q", "<cmd>q<cr>", { desc = "Quit" })
+vim.keymap.set("i", "jj", "<esc>", { desc = "Exit insert mode" })
+vim.keymap.set("i", "jk", "<esc>", { desc = "Exit insert mode" })
