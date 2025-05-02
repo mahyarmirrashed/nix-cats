@@ -58,3 +58,10 @@ To run, first, install [Nix](https://nixos.org/download/) and enable flakes (`ni
 ## Final Notes
 
 This is *my* setup, so it's tailored for me. But, feel free to steal ideas or fork to make it your own badass Neovim config. Have fun! 🚀
+
+#### References
+
+Special thanks to:
+
+- [@BirdeeHub](https://github.com/BirdeeHub) for creating Nix Cats, `lze`, `lzextras`, and for helping me when I got stuck.
+- [@blodewolfepc](https://github.com/bloodwolfepc) for the great Nix Cats configuration which I used as a reference.
