@@ -40,6 +40,7 @@
   # Runtime plugin dependencies
   lspsAndRuntimeDeps = {
     general = with pkgs; [
+      fd
       lazygit
     ];
     lang = {
