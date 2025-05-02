@@ -41,14 +41,14 @@ require("lze").load({
     { "<leader>gS", tf("git_stash"), desc = "Search Git Stash" },
     { "<leader>gl", tf("git_commits"), desc = "Search Git Commits" },
     { "<leader>gf", tf("git_bcommits"), desc = "Search Git Buffer Commits" },
-    -- Search
-    { "<leader>uC", tf("colorscheme"), desc = "Search Colorschemes" },
     -- LSP
     { "gd", tf("lsp_definitions"), desc = "Go to Definition" },
     { "gD", tf("lsp_declarations"), desc = "Go to Declaration" },
     { "gr", tf("lsp_references"), nowait = true, desc = "Search References" },
     { "gI", tf("lsp_implementations"), desc = "Go to Implementation" },
     { "gy", tf("lsp_type_definitions"), desc = "Go to Type Definition" },
+    -- Miscellaneous
+    { "<leader>uC", tf("colorscheme"), desc = "Search Colorschemes" },
   },
   after = function(_) require("telescope").setup() end,
 })
