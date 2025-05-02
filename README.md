@@ -55,6 +55,16 @@ require("lz.n").load {
 
 To run, first, install [Nix](https://nixos.org/download/) and enable flakes (`nix --version` to check). Then, run `nix shell 'github:mahyarmirrashed/nix-cats'`.
 
+### Aliases
+
+If you use my configuration as a base, there are three names by which you can access it:
+
+- `zenvim`;
+- `edit`; and
+- `e`.
+
+Personally, I use `e` because of... [memes](https://knowyourmeme.com/memes/lord-marquaad-e), but also because I run this command so much that I wanted a single character shortcut to get to my editor.
+
 ## Final Notes
 
 This is *my* setup, so it's tailored for me. But, feel free to steal ideas or fork to make it your own badass Neovim config. Have fun! 🚀
