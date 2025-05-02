@@ -33,11 +33,15 @@
   optionalPlugins = {
     general = with pkgs.vimPlugins; [
       mini-surround
+      snacks-nvim
     ];
   };
 
   # Runtime plugin dependencies
   lspsAndRuntimeDeps = {
+    general = with pkgs; [
+      lazygit
+    ];
     lang = {
       docker = with pkgs; [ hadolint ];
       go = with pkgs; [
