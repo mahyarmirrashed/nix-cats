@@ -32,6 +32,7 @@
   # Use `:NixCats pawsible` to see the `packadd` expects
   optionalPlugins = {
     general = with pkgs.vimPlugins; [
+      blink-cmp
       mini-surround
       plenary-nvim
       telescope-nvim
