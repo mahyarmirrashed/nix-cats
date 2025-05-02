@@ -24,9 +24,6 @@ require("lze").load({
     { "<leader>gS", tf("git_stash"), desc = "Search Git Stash" },
     { "<leader>gl", tf("git_commits"), desc = "Search Git Commits" },
     { "<leader>gf", tf("git_bcommits"), desc = "Search Git Buffer Commits" },
-    -- Grep
-    { "<leader>sg", tf("live_grep"), desc = "Live Grep" },
-    { "<leader>sb", tf("current_buffer_fuzzy_find"), desc = "Grep Buffer Lines" },
     -- Search
     { '<leader>s"', tf("registers"), desc = "Search Registers" },
     { "<leader>s/", tf("search_history"), desc = "Search History" },
