@@ -38,6 +38,7 @@
       mini-surround
       plenary-nvim
       telescope-nvim
+      which-key-nvim
     ];
   };
 
