@@ -17,6 +17,7 @@ require("lze").load({
       suppressed_dirs = { "~/Downloads" },
     })
 
+    -- Behaviour is explained here: https://github.com/rmagatti/auto-session#-behaviour
     vim.o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
   end,
 })
