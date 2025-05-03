@@ -45,6 +45,7 @@
     general = with pkgs; [
       fd
       lazygit
+      ripgrep
     ];
     lang = {
       docker = with pkgs; [ hadolint ];
