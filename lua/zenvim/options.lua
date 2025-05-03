@@ -6,10 +6,7 @@ local spelldir = vim.fn.stdpath("data") .. "/spell"
 -- create if not exists
 vim.fn.mkdir(spelldir, "p")
 
--------------------------------------------------------------------------------
 -- General
--------------------------------------------------------------------------------
-
 vim.opt.clipboard = "unnamedplus"         -- use system clipboard (`+` register)
 vim.opt.mouse = "a"                       -- enable mouse support in all modes
 vim.opt.spell = true                      -- enable spell checking
@@ -19,10 +16,7 @@ vim.opt.spelllang = "en"                  -- specify language for spell checking
 vim.opt.swapfile = false                  -- disable swap files to avoid clutter
 vim.opt.undofile = true                   -- enable undo files for persistent undo
 
--------------------------------------------------------------------------------
 -- Neovim UI
--------------------------------------------------------------------------------
-
 vim.opt.relativenumber = true -- show relative line numbers
 vim.opt.cursorline = true     -- highlight the current line
 vim.opt.showmatch = true      -- show matching parenthesis
@@ -43,10 +37,7 @@ vim.opt.listchars = {         -- customize invisible characters
   precedes = "<",
 }
 
--------------------------------------------------------------------------------
 -- Tabs and Indentation
--------------------------------------------------------------------------------
-
 vim.opt.expandtab = true   -- convert tabs to spaces
 vim.opt.shiftwidth = 2     -- number of spaces for each indent level
 vim.opt.tabstop = 2        -- number of spaces for a tab character
@@ -54,8 +45,5 @@ vim.opt.autoindent = true  -- enable auto indentation
 vim.opt.smartindent = true -- enable smart indentation
 vim.opt.breakindent = true -- enable break indentation for wrapped lines
 
--------------------------------------------------------------------------------
 -- Performance
--------------------------------------------------------------------------------
-
 vim.opt.history = 100 -- remember last N, ":" commands
