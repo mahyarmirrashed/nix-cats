@@ -3,7 +3,7 @@ require("lze").load({
   dependencies = { "mini.icons" },
   lazy = false,
   keys = {
-    { "<leader>e", "<cmd>Oil<CR>", desc = "Toggle Oil file explorer" },
+    { "<leader>e", "<cmd>Oil<cr>", desc = "Toggle Oil file explorer" },
   },
   after = function(_)
     require("oil").setup({
