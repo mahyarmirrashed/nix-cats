@@ -2,5 +2,6 @@ vim.keymap.set("n", "<leader>bd", ":bd<cr>", { desc = "Close Buffer", noremap = 
 vim.keymap.set("n", "<leader>ch", ":checkhealth<cr>", { desc = "Check Health" })
 vim.keymap.set("n", "<leader>w", "<cmd>w<cr>", { desc = "Save File" })
 vim.keymap.set("n", "<leader>q", "<cmd>q<cr>", { desc = "Quit" })
+vim.keymap.set("n", "zz", "<cmd>q<cr>", { desc = "Quit" })
 vim.keymap.set("i", "jj", "<esc>", { desc = "Exit Insert Mode" })
 vim.keymap.set("i", "jk", "<esc>", { desc = "Exit Insert Mode" })
