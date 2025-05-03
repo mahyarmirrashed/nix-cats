@@ -34,6 +34,7 @@
   optionalPlugins = {
     general = with pkgs.vimPlugins; [
       blink-cmp
+      gitsigns-nvim
       lazygit-nvim
       mini-surround
       plenary-nvim
