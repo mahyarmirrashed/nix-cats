@@ -18,6 +18,7 @@
       oil-nvim
       mini-icons
       # LSP-related plugins
+      auto-session
       conform-nvim
       nvim-lspconfig
       nvim-treesitter.withAllGrammars
