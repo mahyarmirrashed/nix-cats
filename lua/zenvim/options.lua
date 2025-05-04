@@ -45,5 +45,19 @@ vim.opt.autoindent = true  -- enable auto indentation
 vim.opt.smartindent = true -- enable smart indentation
 vim.opt.breakindent = true -- enable break indentation for wrapped lines
 
+-- Diagnostics
+vim.diagnostic.config({
+  virtual_text = {
+    prefix = "●",
+    source = "if_many", -- Show source (e.g., "hadolint") if multiple sources
+    format = function(diagnostic)
+      return string.format("%s: %s", diagnostic.code or diagnostic.source, diagnostic.message)
+    end,
+  },
+  signs = true, -- Show signs in gutter
+  update_in_insert = false, -- Only update diagnostics in Normal mode
+  severity_sort = true, -- Sort by severity
+})
+
 -- Performance
 vim.opt.history = 100 -- remember last N, ":" commands
