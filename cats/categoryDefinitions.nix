@@ -40,6 +40,7 @@
       mini-surround
       plenary-nvim
       telescope-nvim
+      trouble-nvim
       which-key-nvim
     ];
   };
