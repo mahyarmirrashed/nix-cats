@@ -12,7 +12,7 @@ require("lze").load({
   },
   after = function(_)
     require("auto-session").setup({
-      bypass_save_filetypes = { "oil" },
+      bypass_save_filetypes = { "alpha", "help", "nofile", "oil", "telescope", "trouble" },
       lazy_support = false,
       suppressed_dirs = { "~/Downloads" },
     })
