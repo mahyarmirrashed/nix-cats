@@ -39,6 +39,7 @@
       gitsigns-nvim
       lazygit-nvim
       mini-surround
+      nvim-autopairs
       plenary-nvim
       telescope-nvim
       trouble-nvim
