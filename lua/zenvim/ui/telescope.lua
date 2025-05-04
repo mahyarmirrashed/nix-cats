@@ -9,7 +9,6 @@ require("lze").load({
     -- Essential
     { "<leader><space>", tf("find_files"), desc = "Search Files" },
     { "<leader>,", tf("buffers"), desc = "Search Buffers" },
-    { "<leader>/", tf("live_grep"), desc = "Search Words" },
     { "<leader>:", tf("command_history"), desc = "Search Command History" },
     -- Find
     { "<leader>fa", tf("autocommands"), desc = "Search Autocommands" },
