@@ -42,6 +42,7 @@
       nvim-autopairs
       plenary-nvim
       telescope-nvim
+      todo-comments-nvim
       trouble-nvim
       which-key-nvim
     ];
