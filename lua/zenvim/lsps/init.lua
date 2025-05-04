@@ -1,4 +1,5 @@
 require("zenvim.lsps.completions")
 require("zenvim.lsps.formatters")
+require("zenvim.lsps.linters")
 require("zenvim.lsps.lsps")
 require("zenvim.lsps.treesitter")

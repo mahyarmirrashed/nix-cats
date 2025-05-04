@@ -20,6 +20,7 @@
       # LSP-related plugins
       auto-session
       conform-nvim
+      nvim-lint
       nvim-lspconfig
       nvim-treesitter.withAllGrammars
     ];
