@@ -15,7 +15,7 @@ require("lze").load({
       mode = { "n", "v" },
     },
   },
-  after = function()
+  after = function(_)
     require("conform").setup({
       formatters_by_ft = {
         lua = { "stylua" },
