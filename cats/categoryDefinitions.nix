@@ -18,6 +18,7 @@
       oil-nvim
       mini-icons
       # LSP-related plugins
+      alpha-nvim
       auto-session
       conform-nvim
       nvim-lint
