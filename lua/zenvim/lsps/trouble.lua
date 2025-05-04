@@ -15,14 +15,5 @@ require("lze").load({
       desc = "Buffer Diagnostics (Trouble)",
     },
   },
-  after = function(_)
-    require("trouble").setup({
-      auto_close = true,
-      modes = {
-        diagnostics = {
-          auto_open = true,
-        },
-      },
-    })
-  end,
+  after = function(_) require("trouble").setup() end,
 })
