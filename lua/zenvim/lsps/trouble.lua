@@ -1,6 +1,5 @@
 require("lze").load({
   "trouble.nvim",
-  dependencies = { "nvim-lspconfig", "nvim-lint" },
   event = "BufReadPost",
   cmd = "Trouble",
   keys = {

@@ -4,7 +4,6 @@ end
 
 require("lze").load({
   "telescope.nvim",
-  dependencies = { "plenary.nvim" },
   dep_of = "todo-comments.nvim",
   keys = {
     -- Essential

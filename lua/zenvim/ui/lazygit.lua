@@ -1,6 +1,5 @@
 require("lze").load({
   "lazygit.nvim",
-  dependencies = { "plenary.nvim" },
   cmd = {
     "LazyGit",
     "LazyGitConfig",

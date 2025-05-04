@@ -23,7 +23,6 @@ local header = {
 require("lze").load({
   "alpha-nvim",
   lazy = false,
-  dependencies = { "mini.icons", "plenary.nvim" },
   after = function(_)
     -- Start with theta template
     local theta = require("alpha.themes.theta")

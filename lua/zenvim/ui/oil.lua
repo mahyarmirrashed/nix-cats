@@ -1,6 +1,5 @@
 require("lze").load({
   "oil.nvim",
-  dependencies = { "mini.icons" },
   lazy = false,
   keys = {
     { "<leader>e", "<cmd>Oil<cr>", desc = "Toggle Oil file explorer" },

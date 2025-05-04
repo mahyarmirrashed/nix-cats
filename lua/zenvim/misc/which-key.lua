@@ -1,6 +1,5 @@
 require("lze").load({
   "which-key.nvim",
-  dependencies = { "mini.icons" },
   event = "VimEnter",
   keys = {
     {
