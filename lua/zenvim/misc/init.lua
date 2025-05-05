@@ -1,4 +1,5 @@
 require("zenvim.misc.autopairs")
+require("zenvim.misc.better-escape")
 require("zenvim.misc.cloak")
 require("zenvim.misc.comment")
 require("zenvim.misc.mini")

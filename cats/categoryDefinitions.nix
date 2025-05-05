@@ -35,6 +35,7 @@
   # Use `:NixCats pawsible` to see the `packadd` expects
   optionalPlugins = {
     general = with pkgs.vimPlugins; [
+      better-escape-nvim
       blink-cmp
       cloak-nvim
       comment-nvim
