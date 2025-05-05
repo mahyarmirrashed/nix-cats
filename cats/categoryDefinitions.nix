@@ -37,6 +37,7 @@
     general = with pkgs.vimPlugins; [
       blink-cmp
       cloak-nvim
+      comment-nvim
       gitsigns-nvim
       lazygit-nvim
       mini-surround

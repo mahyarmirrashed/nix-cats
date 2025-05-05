@@ -1,5 +1,6 @@
 require("zenvim.misc.autopairs")
 require("zenvim.misc.cloak")
+require("zenvim.misc.comment")
 require("zenvim.misc.mini")
 require("zenvim.misc.todo-comments")
 require("zenvim.misc.which-key")
