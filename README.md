@@ -75,3 +75,4 @@ Special thanks to:
 
 - [@BirdeeHub](https://github.com/BirdeeHub) for creating Nix Cats, `lze`, `lzextras`, and for helping me when I got stuck.
 - [@blodewolfepc](https://github.com/bloodwolfepc) for the great Nix Cats configuration which I used as a reference.
+- [@dileep-kishore](https://github.com/dileep-kishore/nyanvim) for another great Nix Cats configuration.
