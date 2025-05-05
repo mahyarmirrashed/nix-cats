@@ -1,7 +1,6 @@
 # Roadmap
 
 - Create HomeManager and NixOS modules out of flake using helpers provided by `NixCats`.
-- Create `for` categories alias rather than what is provided by `NixCats`.
 - Add [oil-git-status.nvim](https://github.com/refractalize/oil-git-status.nvim).
 - Add [blink.cmp](https://github.com/Saghen/blink.cmp) additions.
 - Add [marks.nvim](https://github.com/chentoast/marks.nvim).
@@ -15,3 +14,4 @@
 - Configure status line.
 - Configure buffer lists at top.
 - Add [context-commentstring](https://github.com/joosepalviste/nvim-ts-context-commentstring/) if ever need to.
+- Add [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim).
