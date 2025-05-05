@@ -12,7 +12,6 @@ require("zenvim.autocmds")
 require("zenvim.keymaps")
 require("zenvim.options")
 require("zenvim.sessions")
-require("zenvim.themes")
 
 require("zenvim.lsps")
 require("zenvim.misc")
