@@ -14,7 +14,7 @@
         debug = true;
         general = true;
         lang = true;
-        theme = true;
+        theme.gruvbox = true;
         tools = true;
       };
       extra = {
