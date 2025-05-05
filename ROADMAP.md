@@ -11,8 +11,7 @@
     - Figure out highlight groups.
 - Add [treesj](https://github.com/Wansmer/treesj) for block splitting.
 - Add [nvim-dap](https://github.com/mfussenegger/nvim-dap) debugging.
-- Add [comment.nvim](https://github.com/numToStr/Comment.nvim) for quick commenting/uncommenting.
-    - Add [plugin](https://github.com/JoosepAlviste/nvim-ts-context-commentstring) too.
 - Add [obsidian.nvim](https://github.com/epwalsh/obsidian.nvim).
 - Configure status line.
 - Configure buffer lists at top.
+- Add [context-commentstring](https://github.com/joosepalviste/nvim-ts-context-commentstring/) if ever need to.
