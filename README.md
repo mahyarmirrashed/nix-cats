@@ -53,7 +53,20 @@ require("lz.n").load {
 
 ## How to Try It
 
-To run, first, install [Nix](https://nixos.org/download/) and enable flakes (`nix --version` to check). Then, run `nix shell 'github:mahyarmirrashed/nix-cats'`.
+To run, first, install [Nix](https://nixos.org/download/) and enable flakes (`nix --version` to check). Then, run `nix run 'github:mahyarmirrashed/nix-cats'`.
+
+### How to Install It
+
+If you fork this repository, you can add it to your configuration via something like this:
+
+```nix
+{
+  inputs.neovim = {
+    url = "github:mahyarmirrashed/nix-cats";
+    inputs.nixpkgs.follows = "nixpkgs";
+  };
+}
+```
 
 ### Aliases
 
