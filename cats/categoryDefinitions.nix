@@ -24,6 +24,7 @@
       nvim-lint
       nvim-lspconfig
       nvim-treesitter.withAllGrammars
+      vim-startuptime
     ];
     theme = {
       gruvbox = with pkgs.vimPlugins; [ gruvbox-nvim ];
