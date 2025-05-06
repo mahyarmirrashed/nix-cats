@@ -1,4 +1,5 @@
 require("zenvim.ui.alpha")
+require("zenvim.ui.fidget")
 require("zenvim.ui.gitsigns")
 require("zenvim.ui.lazygit")
 require("zenvim.ui.oil")

@@ -40,6 +40,7 @@
       blink-cmp
       cloak-nvim
       comment-nvim
+      fidget-nvim
       gitsigns-nvim
       lazygit-nvim
       mini-surround
