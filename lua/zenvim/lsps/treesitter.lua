@@ -1,6 +1,7 @@
 require("lze").load({
   {
     "nvim-treesitter",
+    dep_of = "treesj",
     event = "DeferredUIEnter",
     after = function(_)
       require("nvim-treesitter.configs").setup({
@@ -15,6 +16,18 @@ require("lze").load({
             node_decremental = "<bs>",
           },
         },
+      })
+    end,
+  },
+  {
+    "treesj",
+    event = "DeferredUIEnter",
+    keys = {
+      { "<leader>m", function() require("treesj").toggle() end, "Toggle Splitjoin" },
+    },
+    after = function(_)
+      require("treesj").setup({
+        use_default_keymaps = false,
       })
     end,
   },

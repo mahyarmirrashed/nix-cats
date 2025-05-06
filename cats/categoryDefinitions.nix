@@ -46,6 +46,7 @@
       plenary-nvim
       telescope-nvim
       todo-comments-nvim
+      treesj
       trouble-nvim
       which-key-nvim
     ];
