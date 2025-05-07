@@ -82,6 +82,7 @@
         basedpyright
         ruff
       ];
+      yaml = with pkgs; [ yamlfmt ];
     };
   };
 

@@ -22,6 +22,7 @@ require("lze").load({
         json = { "jq" },
         lua = { "stylua" },
         nix = { "nixfmt-rfc-style" },
+        yaml = { "yamlfmt" },
       },
       format_on_save = {
         lsp_fallback = true,
