@@ -56,6 +56,7 @@ in
       fidget-nvim
       gitsigns-nvim
       lazygit-nvim
+      lualine-nvim
       mini-surround
       nvim-autopairs
       plenary-nvim
