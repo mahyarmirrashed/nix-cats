@@ -2,6 +2,7 @@
 vim.keymap.set("n", "<tab>", "<cmd>bn<cr>", { desc = "Next buffer" })
 vim.keymap.set("n", "<s-tab>", "<cmd>bp<cr>", { desc = "Previous buffer" })
 vim.keymap.set("n", "<leader>bd", "<cmd>bd!<cr>", { desc = "Close Buffer", noremap = true, silent = true })
+vim.keymap.set("n", "<leader>c", "<cmd>bd!<cr>", { desc = "Close Buffer", noremap = true, silent = true })
 
 -- Indentation
 vim.keymap.set("n", "<", "<s-v><", { desc = "Decrement line indentation" })
@@ -20,7 +21,6 @@ vim.keymap.set("t", "<c-j>", [[<c-\><c-n><c-w>j]], { desc = "Go to lower pane" }
 vim.keymap.set("t", "<c-h>", [[<c-\><c-n><c-w>h]], { desc = "Go to left pane" })
 
 -- Miscellaneous
-vim.keymap.set("n", "<leader>ch", ":checkhealth<cr>", { desc = "Check Health" })
 vim.keymap.set("n", "<leader>w", "<cmd>w<cr>", { desc = "Save File" })
 vim.keymap.set("n", "<leader>q", "<cmd>qa<cr>", { desc = "Quit" })
 vim.keymap.set("n", "<leader>Q", "<cmd>q<cr>", { desc = "Quit" })

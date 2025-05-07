@@ -4,7 +4,7 @@ require("lze").load({
     on_require = "lspconfig",
     keys = {
       { "<leader>rn", vim.lsp.buf.rename, "Rename" },
-      { "<leader>ca", vim.lsp.buf.code_action, "Code Action" },
+      { "<leader>la", vim.lsp.buf.code_action, "Code Action" },
       { "K", vim.lsp.buf.hover, "Hover Documentation" },
       { "<c-k>", vim.lsp.buf.signature_help, "Signature Documentation" },
     },
