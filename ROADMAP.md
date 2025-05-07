@@ -4,7 +4,6 @@
 - Add [blink.cmp](https://github.com/Saghen/blink.cmp) additions.
 - Add [marks.nvim](https://github.com/chentoast/marks.nvim).
 - Add [early-retirement](https://github.com/chentoast/marks.nvim).
-    - Also needs to be added to nixpkgs.
 - Add [git-conflict](https://github.com/akinsho/git-conflict.nvim).
     - Figure out highlight groups.
 - Add [nvim-dap](https://github.com/mfussenegger/nvim-dap) debugging.
