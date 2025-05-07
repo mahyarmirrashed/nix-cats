@@ -8,7 +8,6 @@
     - Figure out highlight groups.
 - Add [nvim-dap](https://github.com/mfussenegger/nvim-dap) debugging.
 - Add [obsidian.nvim](https://github.com/epwalsh/obsidian.nvim).
-- Configure buffer lists at top.
 - Add [context-commentstring](https://github.com/joosepalviste/nvim-ts-context-commentstring/) if ever need to.
 - Add [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim).
 - Reconfigure `famous-quotes-nvim` to `nixpkgs-unstable`.
