@@ -7,6 +7,18 @@
   mkNvimPlugin,
   ...
 }:
+let
+  famous-quotes-nvim = pkgs.vimUtils.buildVimPlugin {
+    pname = "famous-quotes-nvim";
+    version = "v0.1";
+    src = pkgs.fetchFromGitHub {
+      owner = "mahyarmirrashed";
+      repo = "famous-quotes.nvim";
+      rev = "v0.1";
+      sha256 = "179hgxyhzca4g0xmx02kl7gy7c6058kgww4zv7f1dvl2mf59ln67";
+    };
+  };
+in
 {
   # Plugins that will be loaded at startup
   startupPlugins = {
@@ -21,6 +33,7 @@
       alpha-nvim
       auto-session
       conform-nvim
+      famous-quotes-nvim
       nvim-lint
       nvim-lspconfig
       nvim-treesitter.withAllGrammars

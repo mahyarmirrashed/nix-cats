@@ -13,3 +13,4 @@
 - Configure buffer lists at top.
 - Add [context-commentstring](https://github.com/joosepalviste/nvim-ts-context-commentstring/) if ever need to.
 - Add [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim).
+- Reconfigure `famous-quotes-nvim` to `nixpkgs-unstable`.
