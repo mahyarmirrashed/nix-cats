@@ -69,6 +69,7 @@
         gofumpt
         gotools
       ];
+      javascript = with pkgs; [ jq ];
       lua = with pkgs; [
         lua-language-server
         stylua

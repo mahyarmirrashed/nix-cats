@@ -18,8 +18,9 @@ require("lze").load({
   after = function(_)
     require("conform").setup({
       formatters_by_ft = {
-        lua = { "stylua" },
         go = { "gofumpt", "goimports" },
+        json = { "jq" },
+        lua = { "stylua" },
         nix = { "nixfmt-rfc-style" },
       },
       format_on_save = {
